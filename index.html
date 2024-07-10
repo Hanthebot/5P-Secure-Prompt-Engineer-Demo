@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>5P Prompt Engineering</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/src/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/src/css/style.css">
+	<script type="text/javascript" href="/src/js/setup.js"></script>
+</head>
+<body>
+	<header>
+		<h1>5P Prompt Engineering</h1>
+	</header>
+	<main>
+		<div id="session-info">
+			<p>Session Code: <span id="session-code"></span></p>
+			<button id="share-btn">Share</button>
+		</div>
+		<div id="chat-container">
+			<div id="chat-messages">
+				<div class="message user">
+					<div class="profile-image"></div>
+					<div class="message-content">
+						<p class="sender">Me</p>
+						<p class="content">Hello, how are you?</p>
+					</div>
+				</div>
+				<div class="message bot">
+					<div class="profile-image"></div>
+					<div class="message-content">
+						<p class="sender">Bot</p>
+						<p class="content">I'm good, thanks! How about you?</p>
+					</div>
+				</div>
+				<div class="message user">
+					<div class="profile-image"></div>
+					<div class="message-content">
+						<p class="sender">Me</p>
+						<p class="content">Nice to hear that.</p>
+						<p class="content">Can you write me some code?</p>
+					</div>
+				</div>
+				<!-- Add more messages here -->
+			</div>
+
+			<div id="chat-input">
+				<input type="text" id="message-input" placeholder="Type your message...">
+				<button id="send-btn">Send</button>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2024 hanthebot.com</p>
+	</footer>
+</body>
+</html>

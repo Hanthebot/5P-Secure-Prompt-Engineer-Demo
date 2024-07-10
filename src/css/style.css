@@ -1,0 +1,120 @@
+/* CSS styles for messaging app */
+
+/* Header styles */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Main styles */
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+#session-info {
+	margin-bottom: 20px;
+}
+
+#chat-container {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	width: 500px;
+}
+
+#chat-messages {
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message.user {
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.message.bot {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.message.user .content {
+    background-color: #e6e6e6;
+    margin-inline-start: auto;
+}
+
+.message.bot .content {
+    background-color: #f2f2f2;
+}
+
+.sender {
+    margin-right: 10px;
+	font-weight: bold;
+    font-size: smaller;
+
+}
+
+.content {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: fit-content;
+}
+
+#chat-input {
+    display: flex;
+	margin-top: 20px;
+}
+
+#message-input {
+	flex: 1;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#send-btn {
+	margin-left: 10px;
+	padding: 5px 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+#chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-messages::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
