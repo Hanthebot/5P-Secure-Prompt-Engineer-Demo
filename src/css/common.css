@@ -1,0 +1,49 @@
+main {
+	padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Header styles */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Footer styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Nav styles */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline;
+	margin-right: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #555;
+	font-weight: bold;
+}
+
+nav a:hover, nav .current {
+	color: #fff;
+}

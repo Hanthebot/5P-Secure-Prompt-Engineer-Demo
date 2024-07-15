@@ -10,3 +10,6 @@ app.use("/src", express.static(__dirname + "/src"));
 app.get('/', function(req, res){
     res.sendFile('/index.html', { root: __dirname + "" } );
 });
+app.get('/crypto', function(req, res){
+    res.sendFile('/crypto.html', { root: __dirname + "" } );
+});

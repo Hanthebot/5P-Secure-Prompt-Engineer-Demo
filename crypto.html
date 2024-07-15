@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RSA Encryption & Decryption</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/src/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/src/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/src/css/crypto.css">
+    <script type="text/javascript" href="/src/js/crypto.js"></script>
+</head>
+<body>
+    <header>
+        <h1>RSA Encryption & Decryption</h1>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/crypto" class="current">Crypto</a></li>
+			</ul>
+		</nav>
+    </header>
+    <main>
+        <div id="notice">
+            <p>This application operates entirely in the browser and does not submit any data to a backend server. All encryption and decryption procedures are performed locally on the user's device.</p>
+        </div>
+        <div id="key-generation">
+            <h2>RSA Key Generation</h2>
+            <button id="generate-key-btn">Generate Key Pair</button>
+            <div id="public-key">
+                <h3>Public Key</h3>
+                <p id="public-key-value"></p>
+            </div>
+            <div id="private-key">
+                <h3>Private Key</h3>
+                <p id="private-key-value"></p>
+            </div>
+        </div>
+        <div id="encryption">
+            <h2>RSA Encryption</h2>
+            <input type="text" id="encryption-input" placeholder="Enter message to encrypt...">
+            <button id="encrypt-btn">Encrypt</button>
+            <p id="encrypted-message"></p>
+        </div>
+        <div id="decryption">
+            <h2>RSA Decryption</h2>
+            <input type="text" id="decryption-input" placeholder="Enter message to decrypt...">
+            <button id="decrypt-btn">Decrypt</button>
+            <p id="decrypted-message"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 hanthebot.com</p>
+    </footer>
+    <script type="text/javascript">
+        document.getElementById("generate-key-btn").addEventListener("click", generateKeyPairBtn);
+        document.getElementById("encrypt-btn").addEventListener("click", encryptMessageBtn);
+        document.getElementById("decrypt-btn").addEventListener("click", decryptMessageBtn);
+    </script>
+</body>
+</html>
